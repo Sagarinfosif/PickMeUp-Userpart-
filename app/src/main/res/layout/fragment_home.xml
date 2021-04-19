@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infideap.drawerbehavior.AdvanceDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/advance_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/img_side_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/space2"
+                android:backgroundTint="@color/white"
+                android:elevation="@dimen/space5"
+                android:padding="@dimen/space10"
+                android:src="@drawable/ic_three_lines"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></fragment>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space10"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space20"
+                android:orientation="vertical"
+                android:padding="@dimen/space5">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space16"
+                    app:cardCornerRadius="@dimen/space10"
+                    app:cardElevation="@dimen/space5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/where_to_go"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space5"
+                            android:layout_marginTop="@dimen/space5"
+                            app:cardCornerRadius="@dimen/space10">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@android:color/transparent"
+                                android:drawableLeft="@drawable/ic_current_location"
+                                android:drawablePadding="@dimen/space20"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/space10"
+                                android:text="Where to?"
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/text16" />
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space10"
+                            android:layout_marginVertical="@dimen/space10"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@drawable/blue_circle"
+                                    android:padding="@dimen/space5"
+                                    android:src="@drawable/ic_home"
+                                    app:tint="@color/white" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/space5"
+                                    android:fontFamily="@font/roboto"
+                                    android:gravity="center"
+                                    android:text="home"
+                                    android:textAllCaps="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/text8" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="@dimen/space10"
+                                android:layout_marginTop="@dimen/space5"
+                                android:background="@color/grey" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@drawable/gray_circle"
+                                    android:padding="@dimen/space10"
+                                    android:src="@drawable/ic_destination"
+                                    app:tint="@color/lightblack" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/space5"
+                                    android:fontFamily="@font/roboto"
+                                    android:gravity="center"
+                                    android:text="last Destination"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/text8" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="@dimen/space10"
+                                android:layout_marginTop="@dimen/space5"
+                                android:background="@color/grey" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@drawable/gray_circle"
+                                    android:padding="@dimen/space10"
+                                    android:src="@drawable/ic_star"
+                                    app:tint="@color/lightblack" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/space5"
+                                    android:fontFamily="@font/roboto"
+                                    android:gravity="center"
+                                    android:text="favourite"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/text8" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="@dimen/space10"
+                                android:layout_marginTop="@dimen/space5"
+                                android:background="@color/grey" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@drawable/gray_circle"
+                                    android:padding="@dimen/space10"
+                                    android:src="@drawable/ic_plus"
+                                    app:tint="@color/lightblack" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/space5"
+                                    android:fontFamily="@font/roboto"
+                                    android:gravity="center"
+                                    android:text="Add"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/text8" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgcurrentLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/space10"
+                android:src="@drawable/ic_navigation" />
+
+            <!-- Adding bottom sheet after main content -->
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/drawer_layout" />
+</com.infideap.drawerbehavior.AdvanceDrawerLayout>

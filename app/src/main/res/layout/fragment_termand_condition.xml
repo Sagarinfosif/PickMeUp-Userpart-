@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.TermandConditionFragment">
+
+    <include layout="@layout/topbar1"
+        android:id="@+id/top"/>
+
+    <LinearLayout
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/term_of_use"
+        android:id="@+id/termLogo"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/termLogo"
+        android:id="@+id/heading_msg"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:layout_marginTop="@dimen/space40"
+        android:textSize="@dimen/text20"
+        android:textColor="@color/black"
+        android:text="@string/term_message"
+        android:fontFamily="@font/roboto"
+        android:lineSpacingExtra="@dimen/space5"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text18"
+        android:text="@string/to_learn_"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:layout_below="@id/heading_msg"
+        android:layout_marginTop="@dimen/space10"
+        android:fontFamily="@font/roboto"
+        android:layout_marginBottom="@dimen/space10"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/space60"
+        android:layout_height="@dimen/space60"
+        android:layout_gravity="end"
+        android:id="@+id/nextBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/black_solid_round_shape"
+        android:layout_margin="@dimen/text20">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_arrow_long_white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

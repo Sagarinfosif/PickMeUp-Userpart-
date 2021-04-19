@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:orientation="vertical"
+    tools:context=".Fragments.WalletFragment">
+
+    <include layout="@layout/topbar1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/space100"
+                android:layout_height="@dimen/space100"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/white_circle"
+                android:contentDescription="@null"
+                android:padding="@dimen/space15"
+                android:src="@drawable/ic_purse" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space10"
+                android:fontFamily="@font/roboto"
+                android:text="Total Amount"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space10"
+                android:fontFamily="@font/roboto"
+                android:text="$114"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/daily"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:layout_marginTop="@dimen/space20"
+                android:background="@color/white"
+                android:paddingStart="@dimen/space15"
+                android:paddingEnd="@dimen/space15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2"
+                        android:fontFamily="@font/roboto"
+                        android:text="Daily"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text18" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rightarr" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:id="@+id/weekly"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingStart="@dimen/space15"
+                android:paddingEnd="@dimen/space15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2"
+                        android:fontFamily="@font/roboto"
+                        android:text="Weekly"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text18" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rightarr" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:id="@+id/monthly"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingStart="@dimen/space15"
+                android:paddingEnd="@dimen/space15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2"
+                        android:fontFamily="@font/roboto"
+                        android:text="Monthly"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text18" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rightarr" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:layout_marginTop="@dimen/space20"
+                android:background="@color/white"
+                android:paddingStart="@dimen/space15"
+                android:paddingEnd="@dimen/space15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2"
+                        android:fontFamily="@font/roboto"
+                        android:text="Kontoauszuege"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text18" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rightarr" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingStart="@dimen/space15"
+                android:paddingEnd="@dimen/space15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2"
+                        android:fontFamily="@font/roboto"
+                        android:text="Abrechnungen"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text18" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rightarr" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingStart="@dimen/space15"
+                android:paddingEnd="@dimen/space15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2"
+                        android:fontFamily="@font/roboto"
+                        android:text="Bonus"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text18" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rightarr" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

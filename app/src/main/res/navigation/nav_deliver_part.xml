@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_deliver_part.xml"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_homeFragment2_to_shipmentFragmentFragment"
+            app:destination="@id/shipmentFragmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shipmentFragmentFragment"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.ShipmentFragment"
+        android:label="fragment_shipment_fragment"
+        tools:layout="@layout/fragment_shipment_fragment" >
+        <action
+            android:id="@+id/action_shipmentFragmentFragment_to_addressOriginFragment"
+            app:destination="@id/addressOriginFragment" />
+        <action
+            android:id="@+id/action_shipmentFragmentFragment_to_currentShipmentFragment"
+            app:destination="@id/currentShipmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.ServicesFragment"
+        android:label="fragment_services"
+        tools:layout="@layout/fragment_services" />
+    <fragment
+        android:id="@+id/addressOriginFragment"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.AddressOriginFragment"
+        android:label="fragment_address_origin"
+        tools:layout="@layout/fragment_address_origin" >
+        <action
+            android:id="@+id/action_addressOriginFragment_to_addressDestinationFragment"
+            app:destination="@id/addressDestinationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressDestinationFragment"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.AddressDestinationFragment"
+        android:label="fragment_address_destination"
+        tools:layout="@layout/fragment_address_destination" >
+        <action
+            android:id="@+id/action_addressDestinationFragment_to_shipmentQuantityFragment"
+            app:destination="@id/shipmentQuantityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shipmentQuantityFragment"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.ShipmentQuantityFragment"
+        android:label="fragment_shipment_quantity"
+        tools:layout="@layout/fragment_shipment_quantity" >
+        <action
+            android:id="@+id/action_shipmentQuantityFragment_to_tripEstimateFragment"
+            app:destination="@id/tripEstimateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment3"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.ProfileFragment"
+        android:label="fragment_profile2"
+        tools:layout="@layout/fragment_profile2" />
+    <fragment
+        android:id="@+id/paymentFragment2"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.PaymentFragment"
+        android:label="fragment_payment2"
+        tools:layout="@layout/fragment_payment2" />
+    <fragment
+        android:id="@+id/tripEstimateFragment"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.TripEstimateFragment"
+        android:label="fragment_trip_estimate"
+        tools:layout="@layout/fragment_trip_estimate" >
+        <action
+            android:id="@+id/action_tripEstimateFragment_to_paymentFragment2"
+            app:destination="@id/paymentFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentShipmentFragment"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.CurrentShipmentFragment"
+        android:label="fragment_current_shipment"
+        tools:layout="@layout/fragment_current_shipment" >
+        <action
+            android:id="@+id/action_currentShipmentFragment_to_shipmentDetailFragment"
+            app:destination="@id/shipmentDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shipmentDetailFragment"
+        android:name="com.example.pickmeuptransport.Activity.Deliver.Fragment.ShipmentDetailFragment"
+        android:label="fragment_shipment_detail"
+        tools:layout="@layout/fragment_shipment_detail" />
+</navigation>

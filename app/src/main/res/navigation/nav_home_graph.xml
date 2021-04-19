@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.pickmeuptransport.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_walletFragment"
+            app:destination="@id/walletFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_wheretogoFragment"
+            app:destination="@id/wheretogoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tripFragment"
+            app:destination="@id/tripFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_safetyFragment"
+            app:destination="@id/safetyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_FAQFragment"
+            app:destination="@id/FAQFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_promoCodeFragment"
+            app:destination="@id/promoCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.pickmeuptransport.Fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.example.pickmeuptransport.Fragments.WalletFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/wheretogoFragment"
+        android:name="com.example.pickmeuptransport.Fragments.WheretogoFragment"
+        android:label="fragment_wheretogo"
+        tools:layout="@layout/fragment_wheretogo" >
+        <action
+            android:id="@+id/action_wheretogoFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripFragment"
+        android:name="com.example.pickmeuptransport.Fragments.TripFragment"
+        android:label="fragment_trip"
+        tools:layout="@layout/fragment_trip" >
+        <action
+            android:id="@+id/action_tripFragment_to_tripDetailFragment"
+            app:destination="@id/tripDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripDetailFragment"
+        android:name="com.example.pickmeuptransport.Fragments.TripDetailFragment"
+        android:label="fragment_trip_detail"
+        tools:layout="@layout/fragment_trip_detail" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.pickmeuptransport.Fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_termandConditionFragment"
+            app:destination="@id/termandConditionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.example.pickmeuptransport.Fragments.ContactUsFragment"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/safetyFragment"
+        android:name="com.example.pickmeuptransport.Fragments.SafetyFragment"
+        android:label="fragment_safety"
+        tools:layout="@layout/fragment_safety" >
+        <action
+            android:id="@+id/action_safetyFragment_to_tripCheckFragment"
+            app:destination="@id/tripCheckFragment" />
+        <action
+            android:id="@+id/action_safetyFragment_to_emergencyAssistanceFragment"
+            app:destination="@id/emergencyAssistanceFragment" />
+        <action
+            android:id="@+id/action_safetyFragment_to_safetyCentreFragment"
+            app:destination="@id/safetyCentreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripCheckFragment"
+        android:name="com.example.pickmeuptransport.Fragments.TripCheckFragment"
+        android:label="fragment_trip_check"
+        tools:layout="@layout/fragment_trip_check" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.pickmeuptransport.Fragments.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.example.pickmeuptransport.Fragments.FAQFragment"
+        android:label="fragment_f_a_q"
+        tools:layout="@layout/fragment_f_a_q" />
+    <fragment
+        android:id="@+id/promoCodeFragment"
+        android:name="com.example.pickmeuptransport.Fragments.PromoCodeFragment"
+        android:label="fragment_promo_code"
+        tools:layout="@layout/fragment_promo_code" />
+    <fragment
+        android:id="@+id/emergencyAssistanceFragment"
+        android:name="com.example.pickmeuptransport.Fragments.EmergencyAssistanceFragment"
+        android:label="fragment_emergency_assistance"
+        tools:layout="@layout/fragment_emergency_assistance" />
+    <fragment
+        android:id="@+id/safetyCentreFragment"
+        android:name="com.example.pickmeuptransport.Fragments.SafetyCentreFragment"
+        android:label="fragment_safety_centre"
+        tools:layout="@layout/fragment_safety_centre" />
+    <fragment
+        android:id="@+id/termandConditionFragment"
+        android:name="com.example.pickmeuptransport.Fragments.TermandConditionFragment"
+        android:label="fragment_termand_condition"
+        tools:layout="@layout/fragment_termand_condition" />
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="com.example.pickmeuptransport.Fragments.ConfirmFragment"
+        android:label="ConfirmFragment" >
+        <action
+            android:id="@+id/action_confirmFragment_to_findRouting"
+            app:destination="@id/findRouting" />
+    </fragment>
+    <fragment
+        android:id="@+id/findRouting"
+        android:name="com.example.pickmeuptransport.Fragments.FindRouting"
+        android:label="fragment_find_routing"
+        tools:layout="@layout/fragment_find_routing" >
+        <action
+            android:id="@+id/action_findRouting_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_findRouting_to_pickupFragment"
+            app:destination="@id/pickupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickupFragment"
+        android:name="com.example.pickmeuptransport.Fragments.PickupFragment"
+        android:label="fragment_pickup"
+        tools:layout="@layout/fragment_pickup" >
+        <action
+            android:id="@+id/action_pickupFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

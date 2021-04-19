@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Deliver.Fragment.PaymentFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_bar_deliver" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/space20"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/space6">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgVisa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space10"
+                            android:layout_marginTop="@dimen/space10"
+                            android:layout_marginBottom="@dimen/space10"
+                            android:src="@drawable/ic_visa"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/textBalck16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space10"
+                            android:text="Credit card"
+                            app:layout_constraintBottom_toBottomOf="@id/imgVisa"
+                            app:layout_constraintLeft_toRightOf="@id/imgVisa"
+                            app:layout_constraintTop_toTopOf="@id/imgVisa" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtBuilding"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtBuilding"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:layout_marginRight="@dimen/space15"
+                        android:background="@drawable/edt_back"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/space20"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/edtStreet"
+                        app:layout_constraintTop_toBottomOf="@id/txtBuilding" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtStreet"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/surname"
+                        app:layout_constraintLeft_toLeftOf="@id/edtStreet"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtStreet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:hint="@string/sur"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toRightOf="@id/edtBuilding"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtBuilding" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="Card Number" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:hint="123456789"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtExpiry"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expiry_date"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtExp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:layout_marginRight="@dimen/space15"
+                        android:background="@drawable/edt_back"
+                        android:hint="@string/expiry_date"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/space20"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/edtCVV"
+                        app:layout_constraintTop_toBottomOf="@id/txtExpiry" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtCVV"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cvv"
+                        app:layout_constraintLeft_toLeftOf="@id/edtCVV"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtCVV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:hint="@string/cvv"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toRightOf="@id/edtExp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtExpiry" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnConfirm"
+                    style="@style/textWhitGray16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:layout_marginTop="@dimen/space30"
+                    android:layout_marginRight="@dimen/space20"
+                    android:layout_marginBottom="@dimen/space20"
+                    android:background="@drawable/btn_bac"
+                    android:textAllCaps="false"
+                    android:text="@string/confirm_and_pay" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

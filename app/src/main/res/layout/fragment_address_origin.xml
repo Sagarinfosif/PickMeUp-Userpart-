@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Deliver.Fragment.AddressOriginFragment">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_bar_deliver" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space20"
+                app:layout_constraintBottom_toTopOf="@id/btnNext"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/origin"
+                    android:textColor="@color/skyblue"
+                    android:textSize="20sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtBuilding"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Building No. "
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtBuilding"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:layout_marginRight="@dimen/space15"
+                        android:background="@drawable/edt_back"
+                        android:hint="05"
+                        android:paddingLeft="@dimen/space20"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/edtStreet"
+                        app:layout_constraintTop_toBottomOf="@id/txtBuilding" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtStreet"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Street "
+                        app:layout_constraintLeft_toLeftOf="@id/edtStreet"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtStreet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:hint="Cowper Street"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toRightOf="@id/edtBuilding"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtBuilding" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="City" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:hint="Parramatta"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="Country" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:hint="Australia"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10" />
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                style="@style/textWhitGray16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/space20"
+                android:layout_marginRight="@dimen/space20"
+                android:layout_marginBottom="@dimen/space20"
+                android:background="@drawable/btn_bac"
+                android:text="@string/next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

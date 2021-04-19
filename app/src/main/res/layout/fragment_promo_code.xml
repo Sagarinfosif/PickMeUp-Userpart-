@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+    tools:context=".Fragments.PromoCodeFragment">
+
+    <include layout="@layout/topbar1"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/space10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Photo Shop versition"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+    <ImageView
+        android:layout_width="@dimen/space70"
+        android:layout_height="@dimen/space70"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/promo_code_image"
+        android:layout_margin="@dimen/space30"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text18"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promo Code"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space20"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/text18"
+        android:textColor="@color/black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space45"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/space10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:singleLine="true"
+            android:text="Omid10xs"
+
+            android:textSize="@dimen/text18"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share_arrow"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space10"
+            android:id="@+id/share"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/space15"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/space70"
+        android:layout_height="@dimen/space70"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/balance"
+        android:layout_margin="@dimen/space30"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Current balance"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text18"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space45"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/space10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="30.90 €"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="@dimen/text18"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

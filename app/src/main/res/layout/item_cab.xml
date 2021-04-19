@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative_cab"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space70"
+    android:gravity="center"
+    android:padding="@dimen/space5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_name"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wagnor"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginTop="@dimen/space10"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"
+        />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="17sp"-->
+<!--            android:layout_marginTop="@dimen/space10"-->
+<!--            android:id="@+id/catName"-->
+<!--            android:textColor="@color/quantum_bluegrey300"-->
+<!--            android:fontFamily="@font/roboto"-->
+<!--            />-->
+
+
+
+        <!--<ImageView
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:src="@drawable/ic_help"
+            android:id="@+id/euroIcon"
+            android:layout_marginTop="@dimen/dp_4"/>-->
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/space35"
+        android:background="@color/grey"
+        android:layout_marginLeft="@dimen/space1"
+        android:layout_toRightOf="@id/title_name"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car_image"
+        android:layout_marginLeft="@dimen/space2"
+        android:layout_toRightOf="@id/title_name"
+        android:id="@+id/carImage"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carImage"
+        android:id="@+id/driver_time_txt"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/space18"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginLeft="-30dp"
+        android:layout_toRightOf="@id/title_name"/>
+
+
+</RelativeLayout>

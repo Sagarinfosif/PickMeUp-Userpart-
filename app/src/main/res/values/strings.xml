@@ -1,0 +1,162 @@
+<resources>
+    <string name="google_maps_api_key">AIzaSyDFO1yNBgrQViiFr2CQ24t_9IV9AHBZNcU</string>
+
+    <string name="app_name">Pick me up Transport</string>
+    <string name="firstname">Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="phone">Phone Number</string>
+    <string name="login">LOGIN</string>
+    <string name="Register">REGISTER</string>
+    <string name="ForgetPassword">Forget Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="myprofile">My Profile</string>
+    <string name="faq">FAQ</string>
+    <string name="trip">Your Trip</string>
+    <string name="contact">Contact Us</string>
+    <string name="payment">Payment</string>
+    <string name="setting">Settings</string>
+    <string name="safety">Safety</string>
+    <string name="promocode">Promo Code</string>
+    <string name="refer">Refer a friend</string>
+    <string name="logout">Logout</string>
+    <string name="wallet">Wallet</string>
+    <string name="signin">Sign In</string>
+    <string name="to_learn_">To learn more see our <u><b>terms and conditions </b></u>and <u><b>privacy policy</b></u></string>
+    <string name="term_message">By tapping the arrow below, you agree to our Term of use and privacy policy</string>
+    <string name="nohaveaccount">Don\'t have an account?</string>
+    <string name="haveaccount">have an account?</string>
+    <string name="term_and_policy">I accept the Drive Terms of Use &amp; Privarcy Policy.</string>
+    <string name="Verification">Verification</string>
+    <string name="Verificationcode">Enter your Verification Code</string>
+    <string name="termandcondition">Terms &amp; Conditions</string>
+    <string name="privarcypolicy">Privacy Policy</string>
+    <string name="dataprovider">Data Provider</string>
+    <string name="softwarelicence">Software Licence</string>
+    <string name="locationinformation">Location Information</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="email">Email</string>
+    <string name="contactphone">Contact</string>
+    <string name="emergencyyassistance">Emergency Assistance</string>
+    <string name="tripsharing">Trip Sharing</string>
+    <string name="trustedcontact">Trusted Contact</string>
+    <string name="tripcheck">Trip Check</string>
+    <string name="safetycentre">Safety Centre</string>
+    <string name="paypal_msg">When you take a trip using this profile. your Paypal Account will be selected by default</string>
+    <string name="tripcheckdiscription">For the safety of all users. if any unusual activity is detected during your trip. you will receive a notification. please note: ifyou wish to receiving push notification you can disable them.</string>
+    <string name="Walletdiscription">After take your trip you will pay your payment by Wallet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="login_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="skip">Skip</string>
+    <string name="email_or_phone_number">Email or Phone Number<font fgcolor="#FF0000">*</font></string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">Or</string>
+    <string name="google">Google</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="your_profile_is_successfully_verified">Your Profile is \nSuccessfully Verified</string>
+    <string name="i_accept_the_transport_nation_terms_of_use_and_privacy_policy">I accept the Transport Nation <u><b>Terms of Use</b></u> and <u><b>Privacy Policy</b></u></string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="please_enter_the_4_digit_code_send_to_you_at_919876543212">Please enter the 4-digit code send \nto you at <b>+919876543212</b></string>
+    <string name="resend">Resend</string>
+    <string name="select_your_categories">SELECT YOUR CATEGORIES</string>
+    <string name="truck">Truck</string>
+    <string name="card">Car</string>
+    <string name="sign_in"><u>Sign in</u></string>
+    <string name="submit">Submit</string>
+    <string name="done">Done</string>
+    <string name="home">Home</string>
+    <string name="services">Services</string>
+    <string name="pro">Profile</string>
+    <string name="refer_and_earn">Refer and Earn</string>
+    <string name="share_app">Share App</string>
+    <string name="about_us">About Us</string>
+    <string name="taxi">Taxi</string>
+    <string name="cost_effective_for_shippers_nand_truckers_by_taking_out_nof_high_margin_broker">Cost-effective for shippers and truckers by taking out of high margin broker</string>
+    <string name="take_from_revenue_nfor_truckers">Take from revenue \nfor truckers</string>
+    <string name="digital_market_easy_to_use_for_all">Digital market easy to use for all</string>
+    <string name="allow_custmor_to_trace_there_shipments_eta_and_allow_for_automated_payments">Allow custmor to trace there shipments ETA and allow for automated payments.</string>
+    <string name="customise_product_to_ensure_safety_and_legislative_regulation_comply_with_business_specific_standards">Customise product to ensure safety and legislative regulation comply with business specific standards</string>
+    <string name="new_shipment">New Shipment</string>
+    <string name="current_shipment">Current Shipment</string>
+    <string name="origin">Origin</string>
+    <string name="next">Next</string>
+    <string name="receiver_contact_number">Receiver Contact Number</string>
+    <string name="info_gmail_com">info@gmail.com</string>
+    <string name="receiver_email">Receiver Email</string>
+    <string name="dispatch_date">Dispatch Date</string>
+    <string name="choose_your_file_only_pdf_jpeg_files_uploaded">Choose Your File (Only PDF, JPEG files Uploaded)</string>
+    <string name="shipment_number_if_any">Shipment Number (If Any)</string>
+    <string name="recommended_truckers_only">Recommended Truckers Only</string>
+    <string name="_275_400">$ 275 - $400</string>
+    <string name="total_fare">Total Fare</string>
+    <string name="approx_travel_time_02_hours">Approx. Travel Time: 02 Hours</string>
+    <string name="_17_modern_street_suburb_state">17 Modern Street Suburb, State</string>
+    <string name="map_view">Map View</string>
+    <string name="note_this_is_an_approximate_estimate_nactual_fares_may_very_slightly_based_on_traffic">Note : This is an approximate estimate. \nActual fares may very slightly based on traffic.</string>
+    <string name="sur">Surname</string>
+    <string name="surname">Surname</string>
+    <string name="cvv">CVV</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="confirm_shipment">Confirm Shipment</string>
+    <string name="confirm_and_pay">Confirm and Pay</string>
+    <string name="shipment_confirmed">Shipment Confirmed</string>
+    <string name="success">Success</string>
+    <string name="your_shipment_has_been_processed_please_nreview_your_details_in_history">Your shipment has been processed , please \nreview your details in history.</string>
+    <string name="view_details">View Details</string>
+    <string name="ship_by_date">Ship by Date</string>
+    <string name="origin_city">Origin (City)</string>
+    <string name="destination_city">Destination (City)</string>
+    <string name="qty_units"><![CDATA[Qty & Units]]></string>
+    <string name="click_to_open">Click to open</string>
+    <string name="additional_document_site_safety">Additional Document (Site Safety)</string>
+    <string name="site_access_truck_type_pref">Site access - truck type pref...</string>
+    <string name="any_special_comments">Any Special Comments</string>
+    <string name="_15_kg">15 kg</string>
+    <string name="weight">Weight</string>
+    <string name="units">Units</string>
+    <string name="_4_pallets">4 Pallets</string>
+    <string name="quantity">Quantity</string>
+    <string name="_09_02_2021">09/02/2021</string>
+    <string name="shipper_past_working_rate">Shipper Past Working Rate</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string-array name="contact_pref">
+        <item>Email</item>
+        <item>Mobile</item>
+    </string-array>
+
+
+    <string-array name="dispatch">
+        <item>FTL</item>
+        <item>FTL</item>
+    </string-array>
+
+    <string-array name="countryName">
+        <item>Sydney</item>
+        <item>Sydney</item>
+        <item>Sydney</item>
+    </string-array>
+
+
+    <string-array name="packageType">
+        <item>Pallets</item>
+        <item>Pallets</item>
+    </string-array>
+
+
+    <string-array name="truckType">
+        <item>Pickup Truck</item>
+        <item>Pickup Truck</item>
+        <item>Pickup Truck</item>
+
+    </string-array>
+
+</resources>

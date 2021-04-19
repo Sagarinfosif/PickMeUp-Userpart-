@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Deliver.Fragment.MyInvoiceFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_bar_deliver" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Reference#" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space10"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABC12345"
+                    android:textColor="@color/skyblue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="372lbs"
+                    android:textColor="@color/skyblue" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textGrayText15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space15"
+                android:text="Invoice Date : 03/06/2020" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payer Name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="john A." />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accounting Document" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="800001000" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipment Status" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Shipment Complete"
+                    android:textColor="@color/skyblue" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:layout_marginTop="@dimen/space15"
+                android:background="@color/lightGray" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space20">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCircle"
+                    android:layout_width="@dimen/space15"
+                    android:layout_height="@dimen/space15"
+                    android:src="@drawable/ic_dry_clean"
+                    app:layout_constraintBottom_toBottomOf="@id/txtCurrent"
+                    app:layout_constraintRight_toLeftOf="@id/txtCurrent"
+                    app:layout_constraintTop_toTopOf="@id/txtCurrent"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCurrent"
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:text="@string/_17_modern_street_suburb_state"
+                    app:layout_constraintLeft_toRightOf="@id/imgCircle"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtCurrent"
+                    app:layout_constraintLeft_toLeftOf="@id/txtCurrent"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_pin"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

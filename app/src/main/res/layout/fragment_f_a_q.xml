@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:orientation="vertical"
+    tools:context=".Fragments.FAQFragment">
+
+    <include layout="@layout/topbar1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space15"
+                android:paddingRight="@dimen/space15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:text="Review my fare or fees"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space15"
+                android:paddingRight="@dimen/space15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:text="I lost an item"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space15"
+                android:paddingRight="@dimen/space15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:text="My driver was unprofessional"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space15"
+                android:paddingRight="@dimen/space15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:text="My vehicle was not what I expected"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space15"
+                android:paddingRight="@dimen/space15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:text="Review my fare or fees"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space15"
+                android:paddingRight="@dimen/space15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:text="I had a different issue"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space15"
+                android:paddingRight="@dimen/space15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:text="My driver Didn't match the driver photo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

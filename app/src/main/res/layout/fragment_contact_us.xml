@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+    tools:context=".Fragments.ContactUsFragment">
+
+    <include layout="@layout/topbar1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/space10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/space16"
+            android:drawableStart="@drawable/ic_whatsapp_logo_small"
+            android:drawablePadding="@dimen/space10"
+            android:text="@string/whatsapp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text18" />
+
+        <ImageView
+            android:layout_width="@dimen/space20"
+            android:layout_height="@dimen/space20"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:background="@color/lightgrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/space10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/space16"
+            android:drawableStart="@drawable/ic_close_envelope"
+            android:drawablePadding="@dimen/space10"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text18" />
+
+        <ImageView
+            android:layout_width="@dimen/space20"
+            android:layout_height="@dimen/space20"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:background="@color/lightgrey" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/space10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/space16"
+            android:drawableStart="@drawable/ic_phone_call"
+            android:drawablePadding="@dimen/space10"
+            android:text="@string/contactphone"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text18" />
+
+        <ImageView
+            android:layout_width="@dimen/space20"
+            android:layout_height="@dimen/space20"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:background="@color/lightgrey" />
+
+</LinearLayout>

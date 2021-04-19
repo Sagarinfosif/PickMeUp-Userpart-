@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textBlue17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_marginTop="@dimen/space30"
+            android:text="Shipment #1" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space20">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtShip"
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ship_by_date"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/txtOrigin"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="09/02/2021"
+                android:id="@+id/txtShipDate"
+                app:layout_constraintLeft_toLeftOf="@id/txtShip"
+                app:layout_constraintTop_toBottomOf="@id/txtShip" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtOrigin"
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/origin_city"
+                app:layout_constraintLeft_toRightOf="@id/txtShip"
+                app:layout_constraintRight_toLeftOf="@id/txtDestination"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Sydney"
+                app:layout_constraintLeft_toLeftOf="@id/txtOrigin"
+                app:layout_constraintTop_toBottomOf="@id/txtOrigin" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDestination"
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/destination_city"
+                app:layout_constraintLeft_toRightOf="@id/txtOrigin"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Melbourne"
+                app:layout_constraintLeft_toLeftOf="@id/txtDestination"
+                app:layout_constraintTop_toBottomOf="@id/txtDestination" />
+
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtQuant"
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qty_units"
+                app:layout_constraintLeft_toLeftOf="@id/txtShip"
+                app:layout_constraintTop_toBottomOf="@id/txtShipDate"
+                android:layout_marginTop="@dimen/space30"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="4 Pallets"
+                app:layout_constraintLeft_toLeftOf="@id/txtQuant"
+                app:layout_constraintTop_toBottomOf="@id/txtQuant" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTripRate"
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trip Rate"
+                app:layout_constraintLeft_toLeftOf="@id/txtOrigin"
+                app:layout_constraintTop_toTopOf="@id/txtQuant"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="$350"
+                app:layout_constraintLeft_toLeftOf="@id/txtTripRate"
+                app:layout_constraintTop_toBottomOf="@id/txtTripRate" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtLTL"
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LTL/FTL"
+                app:layout_constraintLeft_toLeftOf="@id/txtDestination"
+                app:layout_constraintTop_toTopOf="@id/txtQuant"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="LTL"
+                app:layout_constraintLeft_toLeftOf="@id/txtLTL"
+                app:layout_constraintTop_toBottomOf="@id/txtLTL" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:id="@+id/btnDeatil"
+            style="@style/textWhitGray16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_bac"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space30"
+            android:paddingLeft="30dp"
+            android:paddingRight="@dimen/space30"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewBackground"
+            android:layout_marginTop="@dimen/space20"
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

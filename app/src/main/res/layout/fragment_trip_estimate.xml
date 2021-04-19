@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Deliver.Fragment.TripEstimateFragment">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_bar_deliver" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/space20">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/_275_400"
+
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="@string/total_fare" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="@string/approx_travel_time_02_hours" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    app:cardCornerRadius="@dimen/space7">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgCircle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space20"
+                            android:src="@drawable/ic_dry_clean"
+                            android:tint="@color/skyblue"
+                            app:layout_constraintBottom_toBottomOf="@id/txtAddress"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/txtAddress" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtAddress"
+                            style="@style/textBalck16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space20"
+                            android:layout_marginTop="@dimen/space20"
+                            android:text="@string/_17_modern_street_suburb_state"
+                            app:layout_constraintLeft_toRightOf="@id/imgCircle"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space1"
+                            android:layout_marginLeft="@dimen/space20"
+                            android:layout_marginTop="@dimen/space10"
+                            android:layout_marginRight="@dimen/space20"
+                            android:background="@color/lightgrey"
+                            app:layout_constraintTop_toBottomOf="@id/txtAddress" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtRAddress"
+                            style="@style/textBalck16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space20"
+                            android:layout_marginBottom="@dimen/space20"
+                            android:text="@string/_17_modern_street_suburb_state"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/txtAddress"
+                            app:layout_constraintTop_toBottomOf="@id/view"
+
+                            />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pin"
+                            android:tint="@color/skyblue"
+                            app:layout_constraintBottom_toBottomOf="@id/txtRAddress"
+                            app:layout_constraintLeft_toLeftOf="@id/imgCircle"
+                            app:layout_constraintTop_toTopOf="@id/txtRAddress"
+
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="@string/map_view" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space150"
+                    android:layout_marginTop="@dimen/space20"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/screenshot_2021_03_04_at_10_23_27_am" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space10"
+                    android:gravity="center_horizontal"
+                    android:text="@string/note_this_is_an_approximate_estimate_nactual_fares_may_very_slightly_based_on_traffic" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:id="@+id/btnCancel"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_marginRight="@dimen/space5"
+                        android:background="@drawable/edt_back"
+                        android:layout_marginTop="@dimen/space20"
+                        android:text="Cancel"
+                        style="@style/textBalck16sp"
+                        app:layout_constraintRight_toLeftOf="@id/btnConfirm"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnConfirm"
+                        android:layout_marginTop="@dimen/space20"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="@dimen/space5"
+                        android:background="@drawable/btn_bac"
+                        android:text="@string/confirm_shipment"
+                        android:textAllCaps="false"
+                        style="@style/textWhitGray16sp"
+                        app:layout_constraintLeft_toRightOf="@id/btnCancel"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

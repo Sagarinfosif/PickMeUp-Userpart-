@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SafetyCentreFragment">
+
+    <include layout="@layout/topbar1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/space20"
+        android:layout_marginTop="@dimen/space15"
+        android:paddingLeft="@dimen/space10"
+        android:paddingRight="@dimen/space10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space2"
+                android:layout_weight="1.8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/trustedcontact"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space3"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:text="Share your trip status with Contacts in a single trip"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_plus" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

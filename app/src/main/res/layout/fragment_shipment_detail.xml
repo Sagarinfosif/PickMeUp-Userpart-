@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Deliver.Fragment.ShipmentDetailFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_bar_deliver" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/space20">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBlue17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details Of Shipment" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:fontFamily="sans-serif-medium"
+                android:text="Origin Address" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/_17_modern_street_suburb_state" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:fontFamily="sans-serif-medium"
+                android:text="Destination Address" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/_17_modern_street_suburb_state" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtQuantity"
+                    style="@style/textBalck15Boldsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/quantity"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtQuantity"
+                    app:layout_constraintLeft_toLeftOf="@id/txtQuantity"
+                    android:text="@string/_4_pallets"
+                    style="@style/textBalck13sp"
+                    android:layout_marginTop="@dimen/space10"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtUnit"
+                    style="@style/textBalck15Boldsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/units"
+                    app:layout_constraintLeft_toRightOf="@id/txtQuantity"
+                    app:layout_constraintRight_toLeftOf="@id/txtWeight"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtUnit"
+                    app:layout_constraintLeft_toLeftOf="@id/txtUnit"
+                    android:text="5"
+                    style="@style/textBalck13sp"
+                    android:layout_marginTop="@dimen/space10"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtWeight"
+                    style="@style/textBalck15Boldsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/weight"
+                    app:layout_constraintLeft_toRightOf="@id/txtUnit"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtWeight"
+                    app:layout_constraintLeft_toLeftOf="@id/txtWeight"
+                    android:text="@string/_15_kg"
+                    style="@style/textBalck13sp"
+                    android:layout_marginTop="@dimen/space10"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/any_special_comments" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/site_access_truck_type_pref" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/additional_document_site_safety" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_pdf"
+                android:drawablePadding="@dimen/space5"
+                android:gravity="center_vertical"
+                android:text="@string/click_to_open" />
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTripFare"
+                    style="@style/textBalck15Boldsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Trip Fare"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtTripFare"
+                    app:layout_constraintLeft_toLeftOf="@id/txtTripFare"
+                    android:text="$100"
+                    style="@style/textBalck13sp"
+                    android:layout_marginTop="@dimen/space10"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtShipmentDate"
+                    style="@style/textBalck15Boldsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Shipment Date"
+                    app:layout_constraintLeft_toRightOf="@id/txtTripFare"
+                    app:layout_constraintRight_toLeftOf="@id/txtExpectedDate"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtShipmentDate"
+                    app:layout_constraintLeft_toLeftOf="@id/txtShipmentDate"
+                    android:text="@string/_09_02_2021"
+                    style="@style/textBalck13sp"
+                    android:layout_marginTop="@dimen/space10"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtExpectedDate"
+                    style="@style/textBalck15Boldsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Expected Date \nof Arrival"
+                    app:layout_constraintLeft_toRightOf="@id/txtShipmentDate"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtExpectedDate"
+                    app:layout_constraintLeft_toLeftOf="@id/txtExpectedDate"
+                    android:text="@string/_09_02_2021"
+                    style="@style/textBalck13sp"
+                    android:layout_marginTop="@dimen/space10"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:fontFamily="sans-serif-medium"
+                android:text="Map View" />
+
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space200"
+                app:layout_constraintTop_toBottomOf="@id/layout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginHorizontal="@dimen/space40"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/space10"
+                android:src="@drawable/screenshot_2021_03_02_at_6_03_07_pm"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck15Boldsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/shipper_past_working_rate" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="John S."
+                    android:id="@+id/txtName1"
+                    />
+
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/txtName1"
+                    android:layout_alignBottom="@id/txtName1"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="John S."
+                    android:id="@+id/txtName"
+                    />
+
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/txtName"
+                    android:layout_alignBottom="@id/txtName"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="John S."
+                    android:id="@+id/txtName2"
+                    />
+
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_alignTop="@id/txtName2"
+                    android:layout_alignBottom="@id/txtName2"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space30"
+                android:layout_marginLeft="@dimen/space30"
+                android:layout_marginRight="@dimen/space30"
+                android:background="@drawable/btn_bac"
+                android:text="@string/cancel"
+                style="@style/textWhitGray16sp"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Deliver.Fragment.ShipmentQuantityFragment">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_bar_deliver" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/space20">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtBuilding"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtBuilding"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:layout_marginRight="@dimen/space15"
+                        android:background="@drawable/edt_back"
+                        android:hint="05"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/space20"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/edtStreet"
+                        app:layout_constraintTop_toBottomOf="@id/txtBuilding" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtStreet"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Package Type"
+                        app:layout_constraintLeft_toLeftOf="@id/edtStreet"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/edtStreet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toRightOf="@id/edtBuilding"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtBuilding">
+
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:entries="@array/packageType"
+                            android:paddingLeft="@dimen/space10" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtLength"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Length"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtLength"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:layout_marginRight="@dimen/space15"
+                        android:background="@drawable/edt_back"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/space20"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/edtBreath"
+                        app:layout_constraintTop_toBottomOf="@id/txtLength" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtBreath"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Breadth"
+                        app:layout_constraintLeft_toLeftOf="@id/edtBreath"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtBreath"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toRightOf="@id/edtLength"
+                        app:layout_constraintRight_toLeftOf="@id/edtHeight"
+                        app:layout_constraintTop_toBottomOf="@id/txtBreath" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtHeight"
+                        style="@style/textBalck16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height"
+                        app:layout_constraintLeft_toLeftOf="@id/edtHeight"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtHeight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintLeft_toRightOf="@id/edtBreath"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtBreath" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="Unit of Measure" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:hint="1234"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="Weight (kgs) of Each Pallets" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:hint="15kg"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="Any Special Comments" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:hint="Site access - truck type pref..."
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="Upload Image (Site Safety)" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_plus"
+                        android:tint="@color/skyblue"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:text="@string/choose_your_file_only_pdf_jpeg_files_uploaded"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imgAdd"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="@string/shipment_number_if_any" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:hint="1234"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="Specific Truck Type" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:paddingTop="@dimen/space8"
+                    android:paddingBottom="@dimen/space8">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:entries="@array/truckType"
+                        android:paddingLeft="@dimen/space10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:buttonTint="@color/skyblue"
+                    android:text="@string/recommended_truckers_only" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="Preferred Driver Rating" />
+
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:progressTint="@color/skyblue"
+                    android:rating="4" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnCancel"
+                        style="@style/textBalck16sp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space20"
+                        android:layout_marginRight="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:text="Cancel"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/btnNext"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnNext"
+                        style="@style/textWhitGray16sp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginTop="@dimen/space20"
+                        android:background="@drawable/btn_bac"
+                        android:text="Next"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/btnCancel"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

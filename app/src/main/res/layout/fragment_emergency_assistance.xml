@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EmergencyAssistanceFragment">
+
+    <include layout="@layout/topbar1"
+        android:id="@+id/topbar"/>
+
+    <TextView
+        android:layout_below="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:id="@+id/text_emergency"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_marginBottom="@dimen/space20"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text18"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"/>
+
+<TextView
+    android:layout_below="@+id/text_emergency"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/space20"
+    android:text="Estimate Current Location"
+    android:textSize="@dimen/text18"
+    android:id="@+id/text_currentlocation"
+    android:textStyle="bold"
+    android:textColor="@color/purple_700"
+    android:layout_marginHorizontal="@dimen/space15"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_currentlocation"
+        android:elevation="@dimen/space5"
+        android:layout_marginVertical="@dimen/space10"
+        android:layout_marginHorizontal="@dimen/space15"
+        app:cardCornerRadius="@dimen/space10"
+        android:padding="@dimen/space10">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/location_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/space5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estimate Current Location"
+        android:textSize="@dimen/text18"
+        android:maxLines="2"
+        android:padding="@dimen/space5"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/location_img"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="@dimen/space15"/>
+</RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:layout_width="@dimen/space100"
+        android:layout_height="@dimen/space100"
+        android:src="@drawable/callicon"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/space30"/>
+</RelativeLayout>

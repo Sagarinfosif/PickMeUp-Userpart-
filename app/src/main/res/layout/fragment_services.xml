@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Deliver.Fragment.ServicesFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/top_bar_deliver" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space20">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardMoney"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space10"
+                        app:cardElevation="@dimen/space8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/cardMarket"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgBag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space20"
+                                android:src="@drawable/ic_money_bag_with_dollar_symbol"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/textBalck14sp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space10"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_marginRight="@dimen/space10"
+                                android:layout_marginBottom="@dimen/space20"
+                                android:gravity="center"
+                                android:text="@string/cost_effective_for_shippers_nand_truckers_by_taking_out_nof_high_margin_broker"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/imgBag" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardMarket"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginRight="@dimen/space10"
+                        app:cardElevation="@dimen/space8"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardMoney"
+                        app:layout_constraintLeft_toRightOf="@id/cardMoney"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/cardMoney">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgGraph"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space20"
+                                android:src="@drawable/ic_signal"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/textBalck14sp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space10"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_marginRight="@dimen/space10"
+                                android:layout_marginBottom="@dimen/space20"
+                                android:gravity="center"
+                                android:text="@string/take_from_revenue_nfor_truckers"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/imgGraph" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space20">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space10"
+                        app:cardElevation="@dimen/space8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/cardDigital"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            >
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space20"
+                                android:src="@drawable/ic_connection"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/textBalck14sp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space10"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_marginRight="@dimen/space10"
+                                android:layout_marginBottom="@dimen/space20"
+                                android:gravity="center"
+                                android:text="One-stop collaborative network network between shippers, truckers"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/imgGroup" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardDigital"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginRight="@dimen/space10"
+                        app:cardElevation="@dimen/space8"
+                        app:layout_constraintBottom_toBottomOf="@id/cardGroup"
+                        app:layout_constraintLeft_toRightOf="@id/cardGroup"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/cardGroup">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgDigital"
+                                android:layout_width="@dimen/space70"
+                                android:layout_height="@dimen/space70"
+                                android:layout_marginTop="@dimen/space20"
+                                android:src="@drawable/sfdsfds"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/textBalck14sp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space10"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_marginRight="@dimen/space10"
+                                android:layout_marginBottom="@dimen/space20"
+                                android:gravity="center"
+                                android:text="@string/digital_market_easy_to_use_for_all"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/imgDigital" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space20"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardMap"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space10"
+                        app:cardElevation="@dimen/space8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/cardConnection"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgMap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space20"
+                                android:src="@drawable/ic_map"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/textBalck14sp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space10"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_marginRight="@dimen/space10"
+                                android:layout_marginBottom="@dimen/space20"
+                                android:gravity="center"
+                                android:text="@string/allow_custmor_to_trace_there_shipments_eta_and_allow_for_automated_payments"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/imgMap" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardConnection"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_marginRight="@dimen/space10"
+                        app:cardElevation="@dimen/space8"
+                        app:layout_constraintBottom_toBottomOf="@id/cardMap"
+                        app:layout_constraintLeft_toRightOf="@id/cardMap"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/cardMap">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgConnection"
+                                android:layout_width="@dimen/space70"
+                                android:layout_height="@dimen/space70"
+                                android:layout_marginTop="@dimen/space20"
+                                android:src="@drawable/fdsfds"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/textBalck14sp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space10"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_marginRight="@dimen/space10"
+                                android:layout_marginBottom="@dimen/space20"
+                                android:gravity="center"
+                                android:text="@string/customise_product_to_ensure_safety_and_legislative_regulation_comply_with_business_specific_standards"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/imgConnection" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

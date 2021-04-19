@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:orientation="vertical"
+    tools:context=".Fragments.SafetyFragment">
+
+    <include layout="@layout/topbar1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/space10"
+        android:paddingLeft="@dimen/space15"
+        android:paddingRight="@dimen/space15">
+
+        <LinearLayout
+            android:id="@+id/emergencyAssistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_emerg" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space5"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/emergencyyassistance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space3"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:text="Update your location sharing preference"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:background="@color/lightgrey" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/space10"
+        android:paddingLeft="@dimen/space15"
+        android:paddingRight="@dimen/space15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_map" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space5"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/tripsharing"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space3"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:text="Update your location sharing preference"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:background="@color/lightgrey" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/space10"
+        android:paddingLeft="@dimen/space15"
+        android:paddingRight="@dimen/space15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_calendar" />
+
+            <LinearLayout
+                android:id="@+id/tv_trip_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space5"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/tripcheck"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space3"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:text="Update your location sharing preference"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:background="@color/lightgrey"
+       />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/space10"
+        android:paddingLeft="@dimen/space15"
+        android:paddingRight="@dimen/space15">
+
+        <LinearLayout
+
+            android:id="@+id/safetycentre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_shield" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space5"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/safetycentre"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space3"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:text="Update your location sharing preference"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:background="@color/lightgrey"
+        android:layout_marginVertical="@dimen/space5"/>
+</LinearLayout>

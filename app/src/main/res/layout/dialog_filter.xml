@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/space300"
+    android:layout_height="match_parent"
+    android:layout_gravity="right">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/space20">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipment By Date (Min.)" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:drawableRight="@drawable/ic_calendar"
+                android:drawableTint="@color/skyblue"
+                android:hint="09/02/2021"
+                android:paddingLeft="@dimen/space15"
+                android:paddingTop="@dimen/space10"
+                android:paddingRight="10dp"
+                android:paddingBottom="@dimen/space10" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space15"
+                android:text="Shipment By Date (Max.)" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:drawableRight="@drawable/ic_calendar"
+                android:drawableTint="@color/skyblue"
+                android:hint="09/02/2021"
+                android:paddingLeft="@dimen/space15"
+                android:paddingTop="@dimen/space10"
+                android:paddingRight="10dp"
+                android:paddingBottom="@dimen/space10" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space15"
+                android:text="Origin" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:paddingTop="@dimen/space8"
+                android:paddingBottom="@dimen/space8">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/countryName"
+                    android:paddingLeft="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space15"
+                android:text="Destination" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:paddingTop="@dimen/space8"
+                android:paddingBottom="@dimen/space8">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/countryName"
+                    android:paddingLeft="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space15"
+                android:text="Trip Rate" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:hint="$100"
+                android:paddingLeft="@dimen/space15"
+                android:paddingTop="@dimen/space10"
+                android:paddingRight="10dp"
+                android:paddingBottom="@dimen/space10" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space15"
+                android:text="LTL/FTL" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:paddingTop="@dimen/space8"
+                android:paddingBottom="@dimen/space8">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/dispatch"
+                    android:paddingLeft="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space15"
+                android:text="Truck Type" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:paddingTop="@dimen/space8"
+                android:paddingBottom="@dimen/space8">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/truckType"
+                    android:paddingLeft="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space15"
+                android:text="Weight/Cubics" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:hint="20kg"
+                android:paddingLeft="@dimen/space15"
+                android:paddingTop="@dimen/space10"
+                android:paddingRight="10dp"
+                android:paddingBottom="@dimen/space10" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+android:background="@drawable/btn_outline_black"
+                    android:text="Clear All"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="5dp"
+                    android:paddingRight="@dimen/space20"
+                    android:paddingLeft="@dimen/space20"
+                    app:layout_constraintRight_toLeftOf="@id/btnApply"
+                    android:id="@+id/btnClear"
+                    style="@style/textBalck16sp"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginLeft="@dimen/space5"
+                    app:layout_constraintLeft_toRightOf="@id/btnClear"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/btn_bac"
+                    android:text="Apply Filter" android:textAllCaps="false"
+                    android:paddingRight="@dimen/space20"
+                    android:paddingLeft="@dimen/space20"
+                    android:id="@+id/btnApply"
+                    style="@style/textWhitGray16sp"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

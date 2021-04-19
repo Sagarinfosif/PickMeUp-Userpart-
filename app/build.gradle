@@ -1,0 +1,88 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.driveusers"
+        minSdkVersion 18
+        multiDexEnabled true
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    implementation 'com.android.support:multidex:1.0.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //otp
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+    // Drawer
+    implementation 'com.infideap.drawerbehavior:drawer-behavior:0.1.5'
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    //circleImage view
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    //google map
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+
+    //Google Maps
+    implementation "com.google.android.gms:play-services-maps:17.0.0"
+    //numbercode
+    implementation 'com.hbb20:ccp:2.2.6'
+
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.0'
+
+    // Ripple
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation 'mx.com.pegasus:ripple-circle-button:1.1.8'
+
+    //swipe button
+    implementation 'in.shadowfax:proswipebutton:1.2.2'
+
+    //indicator
+    implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+
+
+
+
+    // switch button
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation 'com.github.angads25:toggle:1.1.0'
+
+
+    // otp view
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+
+    //circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+}

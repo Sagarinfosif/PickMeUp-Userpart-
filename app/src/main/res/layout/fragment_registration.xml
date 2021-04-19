@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RegistrationFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtUser"
+                style="@style/textDarkGrayBold16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/btn_background"
+                android:hint="@string/user"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmail"
+                style="@style/textDarkGrayBold16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_background"
+                android:hint="@string/email"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintLeft_toLeftOf="@id/edtUser"
+                app:layout_constraintRight_toRightOf="@id/edtUser"
+                app:layout_constraintTop_toBottomOf="@id/edtUser" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPhoneNumber"
+                style="@style/textDarkGrayBold16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_background"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintLeft_toLeftOf="@id/edtUser"
+                app:layout_constraintRight_toRightOf="@id/edtUser"
+                app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPassword"
+                style="@style/textDarkGrayBold16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_background"
+                android:hint="@string/password"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintLeft_toLeftOf="@id/edtUser"
+                app:layout_constraintRight_toRightOf="@id/edtUser"
+                app:layout_constraintTop_toBottomOf="@id/edtPhoneNumber" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCPassword"
+                style="@style/textDarkGrayBold16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_background"
+                android:hint="@string/confirm_password"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintLeft_toLeftOf="@id/edtUser"
+                app:layout_constraintRight_toRightOf="@id/edtUser"
+                app:layout_constraintTop_toBottomOf="@id/edtPassword" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignUp"
+                style="@style/textWhitGray16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_blac_backround"
+                android:padding="16dp"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="@+id/edtEmail"
+                app:layout_constraintRight_toRightOf="@+id/edtEmail"
+                app:layout_constraintTop_toBottomOf="@id/edtCPassword"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtOr"
+                style="@style/textDarkGrayBold16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/or"
+                app:layout_constraintLeft_toLeftOf="@id/edtUser"
+                app:layout_constraintRight_toRightOf="@id/edtUser"
+                app:layout_constraintTop_toBottomOf="@id/btnSignUp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/lightGray"
+                app:layout_constraintBottom_toBottomOf="@id/txtOr"
+                app:layout_constraintLeft_toLeftOf="@id/edtEmail"
+                app:layout_constraintRight_toLeftOf="@id/txtOr"
+                app:layout_constraintTop_toTopOf="@id/txtOr" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/lightGray"
+                app:layout_constraintBottom_toBottomOf="@id/txtOr"
+                app:layout_constraintLeft_toRightOf="@id/txtOr"
+                app:layout_constraintRight_toRightOf="@id/edtEmail"
+                app:layout_constraintTop_toTopOf="@id/txtOr" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutGoogle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_white_back"
+                app:layout_constraintLeft_toLeftOf="@id/edtEmail"
+                app:layout_constraintRight_toRightOf="@id/edtEmail"
+                app:layout_constraintTop_toBottomOf="@id/txtOr">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_google"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textDarkGrayBold16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/google"
+                    app:layout_constraintBottom_toBottomOf="@id/imgGoogle"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/imgGoogle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutFacebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/btn_white_back"
+                app:layout_constraintLeft_toLeftOf="@id/edtEmail"
+                app:layout_constraintRight_toRightOf="@id/edtEmail"
+                app:layout_constraintTop_toBottomOf="@id/layoutGoogle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_facebook__1_"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textDarkGrayBold16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    app:layout_constraintBottom_toBottomOf="@id/imgFacebook"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/imgFacebook" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switchLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:sb_button_color="@color/black"
+                app:sb_checked_color="@color/black"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="@id/layoutFacebook"
+                app:layout_constraintTop_toBottomOf="@id/layoutFacebook" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textDarkGray16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txtIAccept"
+                android:text="@string/i_accept_the_transport_nation_terms_of_use_and_privacy_policy"
+                app:layout_constraintBottom_toBottomOf="@id/switchLable"
+                app:layout_constraintLeft_toRightOf="@id/switchLable"
+                app:layout_constraintRight_toRightOf="@id/edtUser"
+                app:layout_constraintTop_toTopOf="@id/switchLable"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtIAccept"
+                app:layout_constraintLeft_toLeftOf="@id/edtUser"
+                app:layout_constraintRight_toRightOf="@id/edtUser"
+                android:text="@string/have_an_account"
+                style="@style/textDarkGray16sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/txtHaveAn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="20dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/txtHaveAn"
+                app:layout_constraintLeft_toRightOf="@id/txtHaveAn"
+                app:layout_constraintBottom_toBottomOf="@id/txtHaveAn"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="@string/sign_in"
+                android:id="@+id/txtSignIn"
+                style="@style/textDarkGrayBold16sp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
